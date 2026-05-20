@@ -23,7 +23,7 @@ public class Order {
     @JoinColumn(name = "user_id",nullable = false)
     private User user;
 
-    private BigDecimal amount;
+    private BigDecimal totalAmount;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status = OrderStatus.PENDING;
